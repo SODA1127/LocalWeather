@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LocalWeather</string>
+    <string name="local_weather_title">Local Weather</string>
+    <string name="temperature_text">%.1f℃</string>
+    <string name="humidity_text">%d%%</string>
+    <string name="unknow_data">Unknow Data</string>
+    <string name="local_text">Local</string>
+    <string name="today_text">Today</string>
+    <string name="tomorrow_text">Tomorrow</string>
+    <string name="error_has_occurred">Error has occurred</string>
+</resources>

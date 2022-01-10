@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <ImageView
+        android:id="@+id/weatherIconImageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerInside"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/weatherStateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/weatherIconImageView"
+        android:layout_marginStart="8dp"
+        app:layout_constraintTop_toTopOf="@id/weatherIconImageView"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintBottom_toTopOf="@id/temperatureTextView"
+        tools:text="Heavy Rain"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/temperatureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/weatherStateTextView"
+        app:layout_constraintTop_toBottomOf="@id/weatherStateTextView"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toBottomOf="@id/weatherIconImageView"
+        tools:text="4℃"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:id="@+id/humidityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/temperatureTextView"
+        app:layout_constraintTop_toTopOf="@id/temperatureTextView"
+        app:layout_constraintBottom_toBottomOf="@id/temperatureTextView"
+        tools:text="65%"
+        android:textColor="@color/charcoal"
+        android:layout_marginStart="12dp"/>
+
+    <androidx.constraintlayout.widget.Group
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/localWeatherDataGroup"
+        app:constraint_referenced_ids="weatherIconImageView,weatherStateTextView,temperatureTextView,humidityTextView"/>
+
+    <TextView
+        android:id="@+id/unknownDataTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unknow_data"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</merge>
