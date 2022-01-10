@@ -3,9 +3,10 @@
 ### Images
 | Loading | Success | Toast |
 | ------- | ------- | ----- |
-|      https://imgur.com/LgX33LH.jpg   |  https://imgur.com/ocmthLc.jpg       |     https://imgur.com/z8zbZqR.jpg  |
+|   [Loading](https://imgur.com/LgX33LH.jpg)   |  [Success](https://imgur.com/ocmthLc.jpg)       |     [Toast](https://imgur.com/z8zbZqR.jpg)  |
 
 ### File Structure
+
 
 📦main
  ┣ 📂java
@@ -71,8 +72,9 @@
  ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜LocalWeatherViewHolder.kt
  ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜ModelViewHolder.kt
  ┃ ┃ ┃ ┃ ┃ ┗ 📜LocalWeatherApp.kt
+ ```
  
- 
+ ```
 📦test
  ┗ 📂java
  ┃ ┗ 📂com
